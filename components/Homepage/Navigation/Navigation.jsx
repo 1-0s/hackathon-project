@@ -6,6 +6,5 @@ const Navigation = props => {
   )
 }
 
-Navigation.propTypes = {}
 
 export default Navigation
