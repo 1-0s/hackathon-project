@@ -23,10 +23,10 @@ git branch example
 ```sh
 git checkout example
 ```
-#### Ensure to make detailed and precise commits to enable other developers working the project understand the workflow
+#### Ensure to make detailed and precise commits to enable other developers working the project understand the workflow. If you fix something, start your commit with FIX, if you add something, start your commit message with FEAT
 
 ```sh
- git commit -a -m 'made a change'
+ git commit -a -m 'FIX: made a change'
 ```
 
 #### Push to the origin
