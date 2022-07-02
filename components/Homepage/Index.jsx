@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Hero from "./Hero/Hero";
+import Navigation from "./Navigation/Navigation";
 
 const Index = () => {
   return (
-    <div className="font-spec text-center text-pup">This is homepage</div>
-  )
-}
+    <>
+      <Navigation />
+      <Hero />
+    </>
+  );
+};
 
-export default Index
+export default Index;
