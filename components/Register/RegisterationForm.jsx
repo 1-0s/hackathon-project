@@ -44,7 +44,7 @@ const RegisterationForm = ({ radioState }) => {
 
   return (
     <div className="text-center">
-      <h1 className="mb-3">Your details:</h1>
+      <h1 className="mb-3 font-spec">Your details:</h1>
       <form
         className="flex flex-col items-center"
         onSubmit={submitHandler}
@@ -76,7 +76,7 @@ const RegisterationForm = ({ radioState }) => {
         />
         <label
           htmlFor="date"
-          className="text-xs text-gray-500 self-start mb-2 ml-1"
+          className="text-xs text-gray-500 self-start mb-2 ml-1 font-spec"
         >
           Date of birth:
         </label>
@@ -87,7 +87,7 @@ const RegisterationForm = ({ radioState }) => {
           defaultValue="1960-01-01"
           // min="2018-01-01"
           max="2010-12-31"
-          className="mb-3 w-64 md:w-80 pl-3 py-2 text-xs outline-none border-solid border-[1px] border-pup"
+          className="mb-3 font-spec w-64 md:w-80 pl-3 py-2 text-xs outline-none border-solid border-[1px] border-pup"
           required
         />
         <input
@@ -99,7 +99,7 @@ const RegisterationForm = ({ radioState }) => {
           required
         />
         <button
-          className="mt-3 py-[6px] bg-pup text-sm text-white w-[80px] "
+          className="mt-3 py-[6px] bg-pup text-sm font-spec text-white w-[80px] "
           type="submit"
         >
           Sign up

@@ -27,14 +27,14 @@ const Login = () => {
     <Navigation />
       <section className="bg-teal-50 h-[90vh] grid place-items-center my-auto">
         <div className="text-center">
-          <h1 className="mb-5 font-bold text-xl">Welcome back, sign in!</h1>
+          <h1 className="mb-5 font-bold text-xl font-spec">Welcome back, sign in!</h1>
 
           {/* form */}
           <form className="flex flex-col items-center" onSubmit={submitHandler}>
             <input
               ref={emailRef}
               type="email"
-              className="mb-3 w-64 md:w-80 pl-3 py-2 text-xs outline-none border-solid border-[1px] border-pup"
+              className="mb-3 w-64 md:w-80 pl-3 font-spec py-2 text-xs outline-none border-solid border-[1px] border-pup"
               placeholder="Email address:"
               required
             />
@@ -54,9 +54,9 @@ const Login = () => {
           </form>
 
           {/* redirection */}
-          <p className="text-sm mt-3">
+          <p className="text-sm mt-3 font-spec">
             Don&apos;t have an account?
-            <span className="text-pup cursor-pointer font-bold">
+            <span className="text-pup cursor-pointer font-bold font-spec">
               <Link href="/register"> Signup</Link>
             </span>
           </p>
