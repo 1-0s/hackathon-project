@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
+import Navigation from "../Homepage/Navigation/Navigation";
 
 const Login = () => {
   const router = useRouter();
@@ -23,7 +24,8 @@ const Login = () => {
   };
   return (
     <>
-      <section className="bg-teal-100 h-[500px] grid place-items-center my-auto">
+    <Navigation />
+      <section className="bg-teal-50 h-[90vh] grid place-items-center my-auto">
         <div className="text-center">
           <h1 className="mb-5 font-bold text-xl">Welcome back, sign in!</h1>
 

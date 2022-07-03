@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useState } from "react";
 import RegisterationForm from "./RegisterationForm";
+import Navigation from "../Homepage/Navigation/Navigation";
 
 const Register = () => {
   const [radioState, setRadioState] = useState("");
@@ -21,7 +22,7 @@ const Register = () => {
   };
 
   return (
-    <section className=" bg-teal-100 h-[480px] grid place-items-center my-auto">
+    <><Navigation /><section className=" bg-teal-50 h-[90vh] grid place-items-center my-auto">
       <div className="text-center">
         <h1 className="mb-5 font-bold text-xl">Create an account:</h1>
         {formState && (
@@ -37,8 +38,7 @@ const Register = () => {
                   readOnly
                   checked={radioState === "professional"}
                   onChange={handleChange}
-                  className="mb-4 md:mb-0"
-                />
+                  className="mb-4 md:mb-0" />
                 <span className="ml-2 text-pup font-bold">
                   I am a medical professional
                 </span>
@@ -52,8 +52,7 @@ const Register = () => {
                   readOnly
                   checked={radioState === "help"}
                   onChange={handleChange}
-                  className=""
-                />
+                  className="" />
                 <span className="ml-2 text-pup font-bold">
                   I need medical help
                 </span>
@@ -77,7 +76,7 @@ const Register = () => {
           </span>
         </p>
       </div>
-    </section>
+    </section></>
   );
 };
 
