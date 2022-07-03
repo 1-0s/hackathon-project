@@ -67,14 +67,6 @@ const ResultPage = ({ Firstname }) => {
           </p>
         </div>
 
-        <div className="book_doctor mt-10">
-          <h2 className="font-spec font-[700] text-[18px] md:text-[32px]">
-            Would you like to see a doctor?
-          </h2>
-
-          <SearchDoctor />
-        </div>
-
         <div className="related mt-12 md:flex gap-5">
           <h2 className="font-spec font-[700] text-[16px] md:text-[24px] md:w-1/4">
             Related symptoms
@@ -84,6 +76,14 @@ const ResultPage = ({ Firstname }) => {
             Headache, constipation, dysentry, erectile dyfunction, mentral pain,
             soar throat, tastlessness, excessive sweating
           </p>
+        </div>
+
+        <div className="book_doctor mt-10">
+          <h2 className="font-spec font-[700] text-[18px] md:text-[32px]">
+            Would you like to see a doctor?
+          </h2>
+
+          <SearchDoctor />
         </div>
 
         <div className="book_doctor mt-12 text-center">
