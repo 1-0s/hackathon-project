@@ -24,12 +24,12 @@ const Register = () => {
   return (
     <><Navigation /><section className=" bg-teal-50 h-[90vh] grid place-items-center my-auto">
       <div className="text-center">
-        <h1 className="mb-5 font-bold text-xl">Create an account:</h1>
+        <h1 className="mb-5 font-bold text-xl font-spec">Create an account:</h1>
         {formState && (
           <>
-            <p className="mb-5">Which option best fits you?</p>
+            <p className="mb-5 font-gros">Which option best fits you?</p>
 
-            <div className="flex flex-col md:flex-row md:w-[500px] md:justify-around">
+            <div className="flex flex-col md:flex-row md:w-[500px] md:justify-around font-spec">
               <label htmlFor="checkbox1">
                 <input
                   type="radio"
@@ -69,9 +69,9 @@ const Register = () => {
           </>
         )}
         {!formState && <RegisterationForm radioState={radioState} />}
-        <p className="text-sm mt-3">
+        <p className="text-sm mt-3 font-spec">
           Already have an account?
-          <span className="text-pup cursor-pointer font-bold">
+          <span className="text-pup cursor-pointer font-bold font-spec">
             <Link href="/login"> Login</Link>
           </span>
         </p>
