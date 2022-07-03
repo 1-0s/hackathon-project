@@ -84,7 +84,7 @@ const RegisterationForm = ({ radioState }) => {
           ref={birthRef}
           type="date"
           id="date"
-          value="1960-01-01"
+          defaultValue="1960-01-01"
           // min="2018-01-01"
           max="2010-12-31"
           className="mb-3 w-64 md:w-80 pl-3 py-2 text-xs outline-none border-solid border-[1px] border-pup"
