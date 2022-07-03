@@ -1,9 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export const MainButton = ({ link, text }) => {
+export const MainButton = ({ link, text, width }) => {
   return (
-    <button className="btn border-[1px] rounded-[5px] bg-pup py-2 px-3 hover:opacity-70">
+    <button
+      className={`btn ${width} border-[1px] rounded-[5px] bg-pup py-2 px-3 hover:opacity-70 `}
+    >
       <Link href={link}>
         <a className="text-white font-gros text-[16px]">{text}</a>
       </Link>
@@ -20,4 +22,3 @@ export const PrimaryButton = ({ link, text }) => {
     </button>
   );
 };
-

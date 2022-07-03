@@ -5,7 +5,7 @@ import HeroImage from "../../../public/assets/HeroImage.svg";
 
 const Hero = () => {
   return (
-    <section className="hero flex flex-col md:flex-row md:justify-between items-center px-8 md:px-12 mt-12">
+    <section className="hero bg-teal-50 flex flex-col md:flex-row md:justify-between items-center px-8 md:px-12 pt-12 pb-[4rem]">
       <div className="content w-2/2 md:w-1/2">
         <p className="font-gros font-[700] text-[13px] md:text-[20px]">
           Do you have a symptom you need help with?
@@ -22,7 +22,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="w-2/2 md:w-1/2 mt-5 flex flex-end md:mt-0">
+      <div className="w-2/2 md:w-1/2 mt-5 flex justify-end md:mt-0">
         <Image src={HeroImage} alt="Mind optimiser logo" />
       </div>
 
