@@ -6,7 +6,7 @@ import { MainButton, PrimaryButton } from "../../Misc/Buttons";
 
 const Navigation = () => {
   return (
-    <nav className="navbar bg-teal-50 flex justify-between items-center px-5 md:px-12 py-4 border-b-[3px] border-white border-solid">
+    <nav className="navbar bg-teal-50 flex justify-between items-center px-5 md:px-12 py-4 ">
       <Link href="/">
         <a>
           <Image src={Logo} alt="Lyful" height="35" />
