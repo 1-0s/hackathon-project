@@ -7,9 +7,6 @@ const Layout = ({ Children }) => {
   return (
     <>
       <section className="flex flex-col md:flex-row">
-        <div className="menu hidden md:inline-block md:w-[20vw] h-full">
-          <Sidebar />
-        </div>
         <div className="children w-[100vw] md:w-[80vw]">{Children}</div>
       </section>
     </>

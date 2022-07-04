@@ -22,7 +22,7 @@ const Register = () => {
 
   return (
     <>
-      <section className=" bg-teal-50 h-[90vh] grid place-items-center my-auto border-b-[5px] border-white border-solid">
+      <section className=" bg-teal-50 py-28 grid place-items-center my-auto border-b-[5px] border-white border-solid">
         <div className="text-center">
           <h1 className="mb-5 font-bold text-xl font-spec">
             Create an account:

@@ -33,7 +33,6 @@ const ResultPage = ({ Firstname }) => {
               <Dropdown
                 placeholder="Symptoms"
                 fluid
-                multiple
                 selection
                 options={Options}
                 onChange={handleDropDownSelect}

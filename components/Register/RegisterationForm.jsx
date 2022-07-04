@@ -1,8 +1,11 @@
 import React from "react";
 import { useRef } from "react";
 import { useRouter } from "next/router";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { app } from "../../pages/api/firebase";
 
 const RegisterationForm = ({ radioState }) => {
+  const auth = getAuth(app);
   const router = useRouter();
 
   const firstNameRef = useRef();
@@ -31,25 +34,32 @@ const RegisterationForm = ({ radioState }) => {
     };
 
     if (firstName && lastName && email && birth && password) {
-      console.log(user_cred);
-      router.push("/doctor/dashboard");
-    }
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((cred) => {
+          alert("Successfully signed up as " + cred.user.email);
 
-    firstNameRef.current.value = "";
-    lastNameRef.current.value = "";
-    emailRef.current.value = "";
-    passwordRef.current.value = "";
-    router.push("/login");
+          if (radioState === "professional") {
+            router.push("/doctor/dashboard");
+          } else {
+            router.push("/search");
+          }
+
+          // reset values
+          firstNameRef.current.value = "";
+          lastNameRef.current.value = "";
+          emailRef.current.value = "";
+          passwordRef.current.value = "";
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
+    }
   };
 
   return (
     <div className="text-center">
       <h1 className="mb-3 font-spec">Your details:</h1>
-      <form
-        className="flex flex-col items-center"
-        onSubmit={submitHandler}
-        ref={formRef}
-      >
+      <form className="flex flex-col items-center" onSubmit={submitHandler}>
         <input
           ref={firstNameRef}
           type="text"

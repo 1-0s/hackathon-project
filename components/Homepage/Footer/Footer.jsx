@@ -33,17 +33,17 @@ const Footer = () => {
             tools{" "}
           </h3>
           <Link href="/search">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               Symptoms Checker
             </a>
           </Link>
           <Link href="/bmi">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               BMI Calculator
             </a>
           </Link>
           <Link href="/">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               Book a Doctor
             </a>
           </Link>
@@ -64,23 +64,23 @@ const Footer = () => {
             Company
           </h3>
           <Link href="/register">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               Create an account
             </a>
           </Link>
           <Link href="#">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               About Us
             </a>
           </Link>
           <Link href="#">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               Careers
             </a>
           </Link>
 
           <Link href="#">
-            <a className="font-spec text-[12px] md:text-[15px] mt-4 cursor-pointer">
+            <a className="font-spec text-black hover:text-pup text-[12px] md:text-[15px] mt-4 cursor-pointer">
               Help Center
             </a>
           </Link>
