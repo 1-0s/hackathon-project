@@ -11,7 +11,7 @@ const SearchDoctor = () => {
           placeholder="Type your address"
           className="py-2 pl-2 w-[100%] md:w-[50%] outline-none border-solid border-[1px] border-pup"
         />
-        <MainButton link="" text="Make request" />
+        <MainButton link="/" text="Make request" />
       </form>
     </>
   );
