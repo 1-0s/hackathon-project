@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useRef } from "react";
-import Navigation from "../Homepage/Navigation/Navigation";
 
 const Login = () => {
   const router = useRouter();
@@ -24,10 +23,11 @@ const Login = () => {
   };
   return (
     <>
-    <Navigation />
-      <section className="bg-teal-50 h-[90vh] grid place-items-center my-auto">
+      <section className="bg-teal-50 h-[90vh] grid place-items-center my-auto border-b-[5px] border-white border-solid">
         <div className="text-center">
-          <h1 className="mb-5 font-bold text-xl font-spec">Welcome back, sign in!</h1>
+          <h1 className="mb-5 font-bold text-xl font-spec">
+            Welcome back, sign in!
+          </h1>
 
           {/* form */}
           <form className="flex flex-col items-center" onSubmit={submitHandler}>

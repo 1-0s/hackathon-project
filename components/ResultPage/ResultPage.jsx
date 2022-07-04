@@ -1,6 +1,7 @@
 import React from "react";
 import { MainButton } from "../Misc/Buttons";
 import SearchDoctor from "../Misc/SearchDoctor";
+import DropdownComp from "./Dropdown";
 
 const ResultPage = ({ Firstname }) => {
   return (
@@ -13,10 +14,11 @@ const ResultPage = ({ Firstname }) => {
           </h2>
 
           <form>
-            <textarea
+            {/* <textarea
               className="textarea font-gros resize-none required block w-[80%] h-[200px] pl-5 pt-5 my-5 rounded-[15px] outline-none hover:border-solid hover:border-[1px] hover:border-pup"
               placeholder="start typing..."
-            ></textarea>
+            ></textarea> */}
+            <DropdownComp />
             <MainButton link="" text="Check this up now!" />
           </form>
         </div>
@@ -86,8 +88,8 @@ const ResultPage = ({ Firstname }) => {
           <SearchDoctor />
         </div>
 
-        <div className="book_doctor mt-12 text-center">
-          <h2 className="font-spec font-[700] opacity-60 text-[18px] md:text-[32px]">
+        <div className="book_doctor my-10 text-center">
+          <h2 className="font-spec font-[700] opacity-60 text-[18px] md:text-[32px] ">
             Disclaimer
           </h2>
 
