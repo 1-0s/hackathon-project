@@ -1,7 +1,4 @@
-import React from "react";
-import { Dropdown } from "semantic-ui-react";
-
-const options = [
+const Options = [
   { key: "angular", text: "Angular", value: "angular" },
   { key: "css", text: "CSS", value: "css" },
   { key: "design", text: "Graphic Design", value: "design" },
@@ -22,20 +19,27 @@ const options = [
   { key: "ux", text: "User Experience", value: "ux" },
 ];
 
-const DropdownComp = () => {
-  return (
-    <>
-      <div className="my-3">
-        <Dropdown
-          placeholder="Symptoms"
-          fluid
-          multiple
-          selection
-          options={options}
-        />
-      </div>
-    </>
-  );
-};
+export default Options;
 
-export default DropdownComp;
+// const DropdownComp = (props) => {
+//   const handleDropDownSelect = (event, data) => {
+//     props.onGetValue(data.value);
+//   };
+
+//   return (
+//     <>
+//       <div className="my-3">
+//         <Dropdown
+//           placeholder="Symptoms"
+//           fluid
+//           multiple
+//           selection
+//           options={options}
+//           onChange={handleDropDownSelect}
+//         />
+//       </div>
+//     </>
+//   );
+// };
+
+// export default DropdownComp;

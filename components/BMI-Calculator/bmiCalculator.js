@@ -73,13 +73,14 @@ const BmiCalculator = () => {
         </div>
         {bmiState && (
           <div className="mt-5 px-3 flex justify-between items-center w-10/12 bg-blue-200 py-3">
-            <h1 className="font-gros text-sm lg:text-base">
-              Your <strong>BMI</strong> is <strong>{result}</strong> which means{" "}
+            <h1 className="font-gros font-[300] text-sm lg:text-base m-0">
+              Your <span className="font-[700]">BMI</span> is{" "}
+              <span className="font-[700]">{result}</span> which means{" "}
               {resultDesc}
             </h1>
 
             <p
-              className="font-bold text-red-500 cursor-pointer ml-4 md:ml-0 border-solid border-2 border-red-500 px-1"
+              className="font-bold text-sm text-red-500 cursor-pointer ml-4 md:ml-0 border-solid border-2 border-red-500 px-1"
               onClick={() => {
                 setBmiState(false);
               }}
