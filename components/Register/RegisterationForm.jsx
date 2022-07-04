@@ -32,7 +32,7 @@ const RegisterationForm = ({ radioState }) => {
 
     if (firstName && lastName && email && birth && password) {
       console.log(user_cred);
-      router.push("/login");
+      router.push("/doctor/dashboard");
     }
 
     firstNameRef.current.value = "";
