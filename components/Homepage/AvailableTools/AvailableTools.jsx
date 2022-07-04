@@ -9,7 +9,7 @@ import { MainButton } from "../../Misc/Buttons";
 export const Tools = ({ Icon, Title, Text }) => {
   return (
     <div className="text-center">
-      <Image src={Icon} alt={Title} responsive />
+      <Image src={Icon} alt={Title} responsive="true" />
       <h3 className="font-gros font-[700] text-[16px] md:text-[24px]">
         {Title}
       </h3>
