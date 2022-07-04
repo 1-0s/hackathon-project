@@ -44,7 +44,7 @@ const Steps = () => {
         <Point
           Number="3"
           Title="Search for a symptom."
-          Text="You will see a text area where you can convieniently tell us what your symptom is."
+          Text="You will see a dropdown where you can convieniently tell us what your symptom is."
         />
       </div>
 
