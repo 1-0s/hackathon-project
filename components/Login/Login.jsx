@@ -33,7 +33,7 @@ const Login = () => {
         signInWithEmailAndPassword(auth, email, password)
           .then((cred) => {
             alert("Signed in successfully as " + cred.user.email);
-            router.push("/search");
+            router.push("/");
 
             // reset values
             emailRef.current.value = "";
