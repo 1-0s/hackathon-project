@@ -27,13 +27,12 @@ const Login = () => {
       ? browserLocalPersistence
       : browserSessionPersistence;
 
-    const user_cred = { email, password };
     if (email && password) {
       setPersistence(auth, persistence).then(() => {
         signInWithEmailAndPassword(auth, email, password)
           .then((cred) => {
+            router.back();
             alert("Signed in successfully as " + cred.user.email);
-            router.push("/");
 
             // reset values
             emailRef.current.value = "";

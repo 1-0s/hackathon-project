@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
-export const MainButton = ({ link, text, width, styling }) => {
+export const MainButton = ({ link, text, width, styling, btnType }) => {
   return (
     <button
+      type={btnType || "button"}
       className={`btn ${width} ${styling} border-[1px] rounded-[5px] bg-pup text-white hover:text-pup hover:bg-white p-2`}
     >
       <Link href={link}>

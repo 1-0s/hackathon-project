@@ -72,7 +72,7 @@ const Register = () => {
               </button>
             </>
           )}
-          {!formState && <RegisterationForm radioState={radioState} />}
+          {!formState && <RegisterationForm accountType={radioState} />}
           <p className="text-sm mt-3 font-spec">
             Already have an account?
             <span className="text-pup cursor-pointer font-bold font-spec">

@@ -4,7 +4,7 @@ import ResultPage from "./ResultPage";
 const Index = () => {
   return (
     <>
-      <ResultPage Firstname="Mary" />
+      <ResultPage />
     </>
   );
 };

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { MainButton } from "../Misc/Buttons";
 import SearchDoctor from "../Misc/SearchDoctor";
 import { Dropdown } from "semantic-ui-react";
-import Options from "./Dropdown";
+import Options from "./DropdownList";
 
-const ResultPage = ({ Firstname }) => {
+const ResultPage = () => {
   const [resultState, setResultState] = useState(false);
   const [valueState, setValueState] = useState(undefined);
 
@@ -12,7 +11,6 @@ const ResultPage = ({ Firstname }) => {
     setValueState(data.value);
   };
   const getHandler = () => {
-    console.log(valueState);
     if (valueState) {
       setResultState(true);
     }
@@ -20,11 +18,11 @@ const ResultPage = ({ Firstname }) => {
 
   return (
     <>
-      (
       <section className="bg-teal-50 pt-10 px-12 md:px-[5rem] pb-10">
         <div className="mt-5">
           <h2 className="font-spec font-[700] text-[18px] md:text-[32px] opacity-60">
-            Hey {Firstname},<br />
+            Hey User,
+            <br />
             What symptom do you have?
           </h2>
 
@@ -40,7 +38,7 @@ const ResultPage = ({ Firstname }) => {
             </div>
 
             <button
-              className="mt-5 py-4 px-3 bg-pup text-sm rounded-[5px] text-white font-gros text-[16px]"
+              className="mt-5 py-4 px-3 bg-pup  rounded-[5px] text-white font-gros text-[16px]"
               type="button"
               onClick={getHandler}
             >

@@ -26,7 +26,7 @@ const AboutSection = () => {
           personal doctor.
         </p>
 
-        <MainButton text="Get Started &rarr;" link="/register" width="100px" />
+        <MainButton text="Get Started &rarr;" link="/search" width="100px" />
       </div>
 
       <style jsx>

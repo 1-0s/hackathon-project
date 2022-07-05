@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { app } from "../../pages/api/firebase";
 
-const RegisterationForm = ({ radioState }) => {
+const RegisterationForm = ({ accountType }) => {
   const auth = getAuth(app);
   const router = useRouter();
 
@@ -13,7 +13,6 @@ const RegisterationForm = ({ radioState }) => {
   const emailRef = useRef();
   const birthRef = useRef();
   const passwordRef = useRef();
-  const formRef = useRef();
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -28,9 +27,7 @@ const RegisterationForm = ({ radioState }) => {
       radioState,
       firstName,
       lastName,
-      email,
       birth,
-      password,
     };
 
     if (firstName && lastName && email && birth && password) {
@@ -38,7 +35,7 @@ const RegisterationForm = ({ radioState }) => {
         .then((cred) => {
           alert("Successfully signed up as " + cred.user.email);
 
-          if (radioState === "professional") {
+          if (accountType === "professional") {
             router.push("/doctor/dashboard");
           } else {
             router.push("/search");
