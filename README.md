@@ -17,4 +17,4 @@
 
 # Website:
 
-[Lyful Med](lyful.netlify.app)
+[Lyful Med](https://lyful.netlify.app/)
