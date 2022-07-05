@@ -24,7 +24,7 @@ const RegisterationForm = ({ accountType }) => {
     const password = passwordRef.current.value;
 
     const user_cred = {
-      radioState,
+      accountType,
       firstName,
       lastName,
       birth,
