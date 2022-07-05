@@ -1,6 +1,6 @@
 # Project done by the Mind Optimizers!
 
-# Whole team:
+# 👨🏽‍💻 Whole team:
 
 ### [Oluwaseyi](https://github.com/xoluwaseyi)
 ### [Stephengade](https://github.com/stephengade)
@@ -14,3 +14,7 @@
 - Tailwind CSS
 - Firebase API
 - Some other libraries
+
+# Website:
+
+[Lyful Med](https://lyful.netlify.app/)
